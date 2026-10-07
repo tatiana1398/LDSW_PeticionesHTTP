@@ -14,6 +14,16 @@ Continúa lo desarrollado en [LDSW_Widgets](https://github.com/tatiana1398/LDSW_
 <img src="docs/evidencias/06_busqueda.png" alt="Búsqueda" width="240">
 </p>
 
+## ¿Por qué PokéAPI?
+
+Se eligió PokéAPI porque es la que mejor se adapta a las necesidades y características de CineCatálogo:
+
+- **Encaja con la temática de la app.** CineCatálogo es un catálogo de películas, y Pokémon tiene su propia película, *Pokémon: Detective Pikachu* (2019). La API permite mostrar los personajes de esa película dentro del catálogo, igual que una ficha de reparto.
+- **Trae imágenes.** Cada personaje tiene su arte oficial, así que la pantalla se ve como el resto del catálogo, que está basado en pósters e imágenes.
+- **Tiene datos en español.** La categoría y la descripción de cada personaje vienen en español, que es el idioma de la app.
+- **No necesita clave ni registro.** Cualquier persona (incluido el asesor) puede clonar el repositorio y ejecutar la app sin configurar nada.
+- **Está activa y es estable.** Responde rápido y sus datos se mantienen actualizados. De las otras opciones, la API de Marvel, que también habría encajado con el cine, ya no está disponible para desarrolladores.
+
 ## Procedimiento ("Obtener datos desde internet")
 
 1. **Agregar el paquete `http`** en `pubspec.yaml` (`flutter pub add http`).
