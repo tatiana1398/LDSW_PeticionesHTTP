@@ -1,0 +1,58 @@
+# Resultado de flutter analyze y flutter test
+# Nota: en las pruebas las respuestas de PokéAPI se simulan con MockClient (package:http/testing.dart);
+# las peticiones reales a internet están en log_peticiones_http.txt (emulador Android).
+
+Analyzing LDSW_PeticionesHTTP...                                
+No issues found! (ran in 21.7s)
+
+00:00 +0: PokeApiService GET /pokemon/{nombre} convierte el JSON en un Personaje
+[HTTP] GET https://pokeapi.co/api/v2/pokemon/pikachu -> 200
+00:00 +1: PokeApiService GET /pokemon-species/{id} toma los textos en español
+[HTTP] GET https://pokeapi.co/api/v2/pokemon-species/25 -> 200
+00:00 +2: PokeApiService Respuesta 404 lanza PersonajeNoEncontrado
+[HTTP] GET https://pokeapi.co/api/v2/pokemon/noexiste -> 404
+00:00 +3: PokeApiService Respuesta 500 lanza PokeApiException
+[HTTP] GET https://pokeapi.co/api/v2/pokemon/error -> 500
+00:00 +4: PokeApiService Sin conexión lanza PokeApiException con mensaje claro
+[HTTP] GET https://pokeapi.co/api/v2/pokemon/pikachu -> error de conexión: ClientException: sin red
+00:00 +5: Pantallas Inicio muestra Hello World y lleva al catálogo
+00:03 +6: Pantallas Personajes: carga, muestra la lista y abre el detalle
+[HTTP] GET https://pokeapi.co/api/v2/pokemon/pikachu -> 200
+[HTTP] GET https://pokeapi.co/api/v2/pokemon/psyduck -> 200
+[HTTP] GET https://pokeapi.co/api/v2/pokemon/charizard -> 200
+[HTTP] GET https://pokeapi.co/api/v2/pokemon/mewtwo -> 200
+[HTTP] GET https://pokeapi.co/api/v2/pokemon/bulbasaur -> 200
+[HTTP] GET https://pokeapi.co/api/v2/pokemon/jigglypuff -> 200
+[HTTP] GET https://pokeapi.co/api/v2/pokemon/mr-mime -> 200
+[HTTP] GET https://pokeapi.co/api/v2/pokemon/greninja -> 200
+[HTTP] GET https://pokeapi.co/api/v2/pokemon-species/1 -> 200
+00:04 +7: Pantallas Buscar un personaje que existe y uno que no
+[HTTP] GET https://pokeapi.co/api/v2/pokemon/pikachu -> 200
+[HTTP] GET https://pokeapi.co/api/v2/pokemon/psyduck -> 200
+[HTTP] GET https://pokeapi.co/api/v2/pokemon/charizard -> 200
+[HTTP] GET https://pokeapi.co/api/v2/pokemon/mewtwo -> 200
+[HTTP] GET https://pokeapi.co/api/v2/pokemon/bulbasaur -> 200
+[HTTP] GET https://pokeapi.co/api/v2/pokemon/jigglypuff -> 200
+[HTTP] GET https://pokeapi.co/api/v2/pokemon/mr-mime -> 200
+[HTTP] GET https://pokeapi.co/api/v2/pokemon/greninja -> 200
+[HTTP] GET https://pokeapi.co/api/v2/pokemon/eevee -> 200
+[HTTP] GET https://pokeapi.co/api/v2/pokemon/noexiste -> 404
+[HTTP] GET https://pokeapi.co/api/v2/pokemon/pikachu -> 200
+[HTTP] GET https://pokeapi.co/api/v2/pokemon/psyduck -> 200
+[HTTP] GET https://pokeapi.co/api/v2/pokemon/charizard -> 200
+[HTTP] GET https://pokeapi.co/api/v2/pokemon/mewtwo -> 200
+[HTTP] GET https://pokeapi.co/api/v2/pokemon/bulbasaur -> 200
+[HTTP] GET https://pokeapi.co/api/v2/pokemon/jigglypuff -> 200
+[HTTP] GET https://pokeapi.co/api/v2/pokemon/mr-mime -> 200
+[HTTP] GET https://pokeapi.co/api/v2/pokemon/greninja -> 200
+00:04 +8: Pantallas No hay desbordes en una pantalla pequeña
+[HTTP] GET https://pokeapi.co/api/v2/pokemon/pikachu -> 200
+[HTTP] GET https://pokeapi.co/api/v2/pokemon/psyduck -> 200
+[HTTP] GET https://pokeapi.co/api/v2/pokemon/charizard -> 200
+[HTTP] GET https://pokeapi.co/api/v2/pokemon/mewtwo -> 200
+[HTTP] GET https://pokeapi.co/api/v2/pokemon/bulbasaur -> 200
+[HTTP] GET https://pokeapi.co/api/v2/pokemon/jigglypuff -> 200
+[HTTP] GET https://pokeapi.co/api/v2/pokemon/mr-mime -> 200
+[HTTP] GET https://pokeapi.co/api/v2/pokemon/greninja -> 200
+[HTTP] GET https://pokeapi.co/api/v2/pokemon-species/1 -> 200
+00:04 +9: All tests passed!

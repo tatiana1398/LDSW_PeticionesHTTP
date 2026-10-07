@@ -1,0 +1,30 @@
+# Peticiones HTTP reales registradas en el emulador Android (adb logcat -s flutter)
+# 1-8: lista de la película | 9: detalle de Psyduck | 10: búsqueda | 11: 404 | sin red | reintento
+
+10-07 09:54:26.377  [HTTP] GET https://pokeapi.co/api/v2/pokemon/bulbasaur -> 200
+10-07 09:54:26.418  [HTTP] GET https://pokeapi.co/api/v2/pokemon/greninja -> 200
+10-07 09:54:26.488  [HTTP] GET https://pokeapi.co/api/v2/pokemon/charizard -> 200
+10-07 09:54:26.495  [HTTP] GET https://pokeapi.co/api/v2/pokemon/psyduck -> 200
+10-07 09:54:26.502  [HTTP] GET https://pokeapi.co/api/v2/pokemon/jigglypuff -> 200
+10-07 09:54:26.515  [HTTP] GET https://pokeapi.co/api/v2/pokemon/pikachu -> 200
+10-07 09:54:26.628  [HTTP] GET https://pokeapi.co/api/v2/pokemon/mr-mime -> 200
+10-07 09:54:26.644  [HTTP] GET https://pokeapi.co/api/v2/pokemon/mewtwo -> 200
+10-07 09:54:46.706  [HTTP] GET https://pokeapi.co/api/v2/pokemon-species/54 -> 200
+10-07 09:54:56.715  [HTTP] GET https://pokeapi.co/api/v2/pokemon/eevee -> 200
+10-07 09:55:03.079  [HTTP] GET https://pokeapi.co/api/v2/pokemon/noexiste -> 404
+10-07 09:55:24.494  [HTTP] GET https://pokeapi.co/api/v2/pokemon/pikachu -> error de conexión: ClientException with SocketException: Failed host lookup
+10-07 09:55:24.495  [HTTP] GET https://pokeapi.co/api/v2/pokemon/mr-mime -> error de conexión: ClientException with SocketException: Failed host lookup
+10-07 09:55:24.502  [HTTP] GET https://pokeapi.co/api/v2/pokemon/psyduck -> error de conexión: ClientException with SocketException: Failed host lookup
+10-07 09:55:24.503  [HTTP] GET https://pokeapi.co/api/v2/pokemon/mewtwo -> error de conexión: ClientException with SocketException: Failed host lookup
+10-07 09:55:24.503  [HTTP] GET https://pokeapi.co/api/v2/pokemon/bulbasaur -> error de conexión: ClientException with SocketException: Failed host lookup
+10-07 09:55:24.503  [HTTP] GET https://pokeapi.co/api/v2/pokemon/jigglypuff -> error de conexión: ClientException with SocketException: Failed host lookup
+10-07 09:55:24.503  [HTTP] GET https://pokeapi.co/api/v2/pokemon/charizard -> error de conexión: ClientException with SocketException: Failed host lookup
+10-07 09:55:24.503  [HTTP] GET https://pokeapi.co/api/v2/pokemon/greninja -> error de conexión: ClientException with SocketException: Failed host lookup
+10-07 09:56:42.367  [HTTP] GET https://pokeapi.co/api/v2/pokemon/greninja -> 200
+10-07 09:56:43.584  [HTTP] GET https://pokeapi.co/api/v2/pokemon/bulbasaur -> 200
+10-07 09:56:43.782  [HTTP] GET https://pokeapi.co/api/v2/pokemon/psyduck -> 200
+10-07 09:56:44.049  [HTTP] GET https://pokeapi.co/api/v2/pokemon/mr-mime -> 200
+10-07 09:56:45.178  [HTTP] GET https://pokeapi.co/api/v2/pokemon/charizard -> 200
+10-07 09:56:45.481  [HTTP] GET https://pokeapi.co/api/v2/pokemon/jigglypuff -> 200
+10-07 09:56:46.051  [HTTP] GET https://pokeapi.co/api/v2/pokemon/pikachu -> 200
+10-07 09:56:47.968  [HTTP] GET https://pokeapi.co/api/v2/pokemon/mewtwo -> 200
