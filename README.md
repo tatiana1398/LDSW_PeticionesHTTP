@@ -14,15 +14,6 @@ Continúa lo desarrollado en [LDSW_Widgets](https://github.com/tatiana1398/LDSW_
 <img src="docs/evidencias/06_busqueda.png" alt="Búsqueda" width="240">
 </p>
 
-## ¿Por qué PokéAPI?
-
-| API sugerida | Estado (octubre 2026) |
-|---|---|
-| Marvel Developer API | El portal de desarrolladores fue cerrado (redirige a marvel.com) y la API responde con error 500; ya no se pueden obtener claves. |
-| COVID Tracking API | El proyecto terminó; los datos están congelados en marzo de 2021 y no tienen relación con un catálogo de películas. |
-| OpenWeatherMap API | Requiere una clave personal (sin ella responde 401) y el clima no se relaciona con el catálogo. |
-| **PokéAPI** | **Gratuita, sin clave, con imágenes.** Se integra al catálogo como los personajes de la película *Pokémon: Detective Pikachu*. |
-
 ## Procedimiento ("Obtener datos desde internet")
 
 1. **Agregar el paquete `http`** en `pubspec.yaml` (`flutter pub add http`).
